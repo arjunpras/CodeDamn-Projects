@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    /* background-color: #e8e6e3; */
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid green;
+    height: 200vh;
+    width: 100vw;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.button-container {
+    position: relative;
+}
+
+.on-mobile ul {
+    list-style-type: none;
+    border: 2px solid black;
+}
+
+#home {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.home-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 90%;
+    min-width: 190px;
+    border: 3px solid red;
+
+}
+
+.home-text h1 {
+    font-size: 2rem;
+}
+
+.home-links {
+    display: block;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.tech-stack {
+    width: 80%;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container .tech-stack-logos {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 90%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.container .tech-stack-logos img {
+    max-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .sm\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .lg\:mx-420-px {
+        width: 420px;
+    }
+
+    .lg\:hidden {
+        display: none;
+    }
+}
